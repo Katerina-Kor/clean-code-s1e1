@@ -3,17 +3,21 @@
   color: #333;
   font-family: Lato, sans-serif;
 }
+
 .body__elem {
   width: 500px;
   margin: 0 auto;
   display: block;
 }
+
 .header {
   text-align: right;
 }
+
 .header__image {
   width: 100%;
 }
+
 .header__link {
   font-family: fantasy, cursive;
 }
@@ -25,10 +29,12 @@
   }
 
 }
+
 .list {
   margin: 0;
   padding: 0px;
 }
+
 .list__item {
   list-style: none;
   overflow: hidden;
@@ -37,13 +43,16 @@
   justify-content: space-between;
   align-items: center;
 }
+
 .list__item_border-bottom {
   border-bottom: 1px solid #eee;
 }
+
 .input,
 .button{
   outline: none;
 }
+
 .button {
   background: none;
   border: 0px;
@@ -53,9 +62,11 @@
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
+
 .button:hover {
   color: #3a3a3a;
 }
+
 .heading {
   color: #333;
   font-weight: 700;
@@ -65,6 +76,7 @@
   margin: 0;
   text-transform: uppercase;
 }
+
 .input-text {
   margin: 0;
   font-size: 18px;
@@ -79,28 +91,34 @@
   flex-grow: 1;
   width: 224px;
 }
+
 .input-text:focus {
   color: #333;
 }
+
 .input-text_hidden {
   display: none;
 }
+
 .label {
   display: flex;
   flex-grow: 1;
 }
+
 .label__input-checkbox {
   margin: 0 10px;
 }
+
 .label__text {
   font-size: 18px;
   padding-left: 10px;
-  margin: 0;
-  
+  margin: 0;  
 }
+
 .label_text-hidden {
   flex-grow: 0;
 }
+
 .label_text-hidden .label__text {
   display: none;
 }
@@ -110,6 +128,7 @@
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
+
 .delete-button__image:hover {
   transform: rotateZ(0);
 }
