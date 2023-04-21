@@ -4,46 +4,42 @@
   color: #333;
   font-family: Lato, sans-serif;
 }
-.aaa {
+.body__elem {
   width: 500px;
   margin: 0 auto;
   display: block;
+}
+.header {
   text-align: right;
 }
-.main-image {
+.header__image {
   width: 100%;
 }
-.more-inf {
+.header__link {
   font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
 
-  .aaa { 
+  .header { 
     text-align: center;
   }
 
-}
-.centered-main-page-element {
-  display: block;
-  width: 500px;
-  margin: 0 auto 0;
-}
-.task {
-  width: 56%;
-  display: inline-block;
-  flex-grow: 1;
-}
-.task-row-wrapper {
-  display: flex;
 }
 .list {
   margin: 0;
   padding: 0px;
 }
-.list-item,
-.heading {
+.list__item {
   list-style: none;
+  overflow: hidden;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.list__item_border-bottom {
+  border-bottom: 1px solid #eee;
 }
 .input,
 .button{
@@ -62,8 +58,7 @@
   color: #3a3a3a;
 }
 /* heading */
-.heading,
-.label-new-task {
+.heading {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -83,70 +78,47 @@
   border-radius: 6px;
   font-family: Lato, sans-serif;
   color: #888;
+  flex-grow: 1;
+  width: 224px;
 }
 .input-text:focus {
   color: #333;
 }
-
-/* new task */
-.label-new-task {
-  display: block;
-  margin: 0 0 20px;
+.input-text_hidden {
+  display: none;
 }
-#new-task {
-  width: 318px;
+.label {
+  display: flex;
+  flex-grow: 1;
+}
+.label__input-checkbox {
+  margin: 0 10px;
+}
+.label__text {
+  font-size: 18px;
+  padding-left: 10px;
+  margin: 0;
+  
+}
+.label_text-hidden {
+  flex-grow: 0;
+}
+.label_text-hidden .label__text {
+  display: none;
 }
 
 /* task list */
-.list-item {
-  overflow: hidden;
-  padding: 20px 0;
-  border-bottom: 1px solid #eee;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.list-item > * {
-  vertical-align: middle;
-}
-
-.input-checkbox {
-  margin: 0 10px;
-}
-.label.task {
-  padding-left: 10px;
-  box-sizing: border-box;
-  font-size: 18px;
-  width: 226px;
-}
-.list-item > .input-text {
-  width: 226px;
-}
-.delete-image {
+.delete-button__image {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-.delete-image:hover {
+.delete-button__image:hover {
   transform: rotateZ(0);
 }
 
 /* completed */
-#completed-tasks .label {
+.label__text_decor_crossed-out {
   text-decoration: line-through;
   color: #888;
-}
-
-/* edit task */
-.list-item .input-text {
-  display: none;
-}
-
-.edit-mode .input-text {
-  display: inline-block;
-  width: 224px;
-}
-
-.edit-mode .label {
-  display: none;
 }
